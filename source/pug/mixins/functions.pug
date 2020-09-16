@@ -1,0 +1,233 @@
+mixin pageHeader(tituloTema, srcImagen, pagina)
+
+    .curso-portada
+
+        .row.align-items-center
+
+            .col-12.col-lg-6
+
+                h3#curso-titulo-componente.curso-subtitulo Certificación de la discapacidad y registro para localización y caracterización de las personas con discapacidad.
+                h1#curso-titulo-tema.curso-titulo Aspectos técnicos y operativos del procedimiento de certificación y registro de discapacidad              
+                
+
+                .brand-line-primary
+
+                if pagina == 'main'
+
+                    .keywords
+                        span.badge.badge-pill.badge-light.mr-2 #Registro
+                        span.badge.badge-pill.badge-light.mr-2 #Discapacidad
+                        span.badge.badge-pill.badge-light.mr-2 #Caracterización
+
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+                    p.curso-descripcion 
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
+                        span Iniciar curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
+
+
+mixin navTemaItem(numero, titulo, ruta)
+    li.list-group-item.nav-tema-item
+        .row.align-items-center
+            if numero == 'play'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-play
+            else if numero == 'question'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-question
+            else if numero == 'text'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
+            else
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+
+            .col.ml-n2
+                span.nav-tema-item__titulo 
+                    a(href= ruta)= titulo
+            .col-auto                                            
+                a(href= ruta).btn.btn-light.nav-tema-item__btn
+                    | Ver más
+    
+    
+mixin creditosFooter(ruta)
+    footer#Creditos.footer
+        .container
+
+            h1 Créditos               
+            .brand-line-primary
+
+            .row
+                .col-12.col-md-5
+                    h3.footer-subtitulo.mb-4 ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES 
+
+                    p.footer-texto.mb-2
+                        | #[strong Ingry Dayanna Bonilla Monzon	 ]<br/>   
+                        span.text-small Líder del equipo
+
+            .row.mt-5
+                .col-12.col-md-5
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Contenido Instruccional
+
+                    p.footer-texto.mb-2
+                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>   
+                        span.text-small Responsable del equipo
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Comercio y Servicios
+                        br
+                        span.text-small Regional Tolima
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Rafael Nelftalí Lizcano Reyes]<br/>               
+                        span.text-small Asesor pedagógico<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Regional Santander    
+
+                    p.footer-texto.mb-2
+                        | #[strong Carol Andrea Jaime Morales]<br/>
+                        span.text-small Experta temática<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Formación en Actividad Física y Cultura 
+                        br
+                        span.text-small Regional Distrito Capital
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Andrés Felipe Velandia Espitia]<br/>   
+                        span.text-small Diseñador instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Diseño y Metrología 
+                        br
+                        span.text-small Regional Distrito Capital
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Luis Fernando Botero Mendoza ]<br/>   
+                        span.text-small Evaluador instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
+                        br
+                        span.text-small Regional Distrito Capital
+
+                    p.footer-texto.mb-2
+                        | #[strong Julieth Paola Vital López]<br/>   
+                        span.text-small Corrección de estilo<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
+                        br
+                        span.text-small Regional Distrito Capital     
+
+                       
+                .col-12.col-md-5
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Diseño y desarrollo de recursos educativos digitales
+                    
+                    p.footer-texto
+                        | #[strong Francisco José Lizcano Reyes ]<br/>   
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto
+                        | #[strong Leyson Fabian Castaño Perez]<br/>   
+                        span.text-small Integración de recursos y pruebas<br/>
+
+                    p.footer-texto                           
+                        | #[strong Carlos Julián Ramírez Benítez]<br/>  
+                        | #[strong Ernesto Navarro Jaimes]<br/>
+                        | #[strong Lady Adriana Ariza Luque ]<br/>
+                        | #[strong Maria Camila Ovalle Ospina ]<br/>
+                        | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
+                        span.text-small Diseño web & producción audiovisual<br/>
+
+                    p.footer-texto
+                        | #[strong Daniel Ricardo Mutis Gómez]<br/>
+                        | #[strong Magdi Khalifah Gamboa]<br/>                
+                        span.text-small Desarrollo front-end<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Regional Santander
+
+                    h4.footer-subtitulo-2.mt-5
+                        .fa.fa-caret-right.mr-2
+                        | Gestores de repositorio
+                    
+                    p.footer-texto
+                        | #[strong Brayan Steven Pinto Diaz ]<br/>
+                        | #[strong Edilson Laverde Molina]<br/>  
+                        | #[strong Ricardo Alfonso Gonzalez Vargas ]<br/>     
+                        span.text-small Validación de recursos.<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de comercio y servicios  
+                        br
+                        span.text-small Regional Tolima
+
+                .col-12.col-md-2  
+                    .d-flex.flex-column.justify-content-center
+                        img(src= ruta, style="max-width:100px")             
+
+
+               
+
+    section#cc
+        .container
+            .d-flex.flex-column.flex-sm-row
+                span.pr-3
+                    i.icon.cc
+            
+                span
+                    | Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que
+                    | el trabajo original.

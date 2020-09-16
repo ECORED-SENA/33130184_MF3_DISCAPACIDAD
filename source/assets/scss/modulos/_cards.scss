@@ -1,0 +1,82 @@
+.card__border-bottom {
+    border-bottom: 4px solid $brand-color-light;
+}
+
+.card-border-bottom {    
+    .card {
+        border:0px;
+        border-bottom: 4px solid $brand-color-light;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+#mainContent .card-body p {
+    margin-bottom: 0px;
+}
+
+.card .avatar-img {
+    object-fit: contain;
+}
+
+.card-transparent {
+    .card {
+        background-color: transparent;
+
+        .card-body {
+            background-color: #fff;
+        }
+    }
+}
+
+.accordion {
+
+    .card {
+        margin-bottom: 0;
+
+        &:first-child .card-header {
+            border-top: 1px solid #2B4E6A;
+        }
+
+        .show {
+            border-bottom: 1px solid #2B4E6A;
+        }
+    }
+
+    .card-header {
+        background-color: white;
+        border-bottom: 3px solid #2B4E6A;
+    }
+
+    .card-body{
+        background-color: #E6EDF2;
+    }
+
+    .icon {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin: 0 15px 0px 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        &.icon-1 {
+            background-image: url('../images/pages/tema-1/icon-1.svg');
+        }       
+        &.icon-2 {
+            background-image: url('../images/pages/tema-1/icon-2.svg');
+        }  
+        &.icon-3 {
+            background-image: url('../images/pages/tema-1/icon-3.svg');
+        }  
+        &.icon-4 {
+            background-image: url('../images/pages/tema-1/icon-4.svg');
+        }  
+        &.icon-5 {
+            background-image: url('../images/pages/tema-1/icon-5.svg');
+        }  
+    }
+}

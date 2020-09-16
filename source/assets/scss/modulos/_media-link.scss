@@ -1,0 +1,28 @@
+$media_link-cl: #EDF2F9;
+
+.media_link {
+  width: 100%; 
+  a {
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 7px;
+    background-color: $media_link-cl;
+
+    .media_link__icon {
+      width: 45px;
+      margin-right: 1rem;
+      img {
+        width: 45px;
+      }
+    }
+    .media_link__txt {
+      color: #12263F;
+      p {
+        margin: 0 !important;
+      }
+      
+    }
+  }
+}

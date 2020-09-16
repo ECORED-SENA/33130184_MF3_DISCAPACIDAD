@@ -1,0 +1,142 @@
+include mixins/functions
+
+doctype
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title Ruta de aprendizaje
+        meta(meta name="description" content="Ruta de aprendizaje programa Salud penitenciaria.")    
+        link(rel="icon",type="image/svg+xml",href="assets/images/logos/senaLogo.svg")
+        link(rel="stylesheet", href="assets/fonts/feather/feather.css")
+        link(rel="stylesheet", href="assets/fonts/fontawesome/css/font-awesome.css")
+        link(href='assets/css/fancybox.css', rel='stylesheet')
+        link(href='assets/css/animate.css', rel='stylesheet')
+        link(rel="stylesheet", href="assets/css/main.css")
+
+
+    body#page-home.theme-dark.page-header-textura
+
+        header#CursoPresentacion.curso-presentacion.page-header
+            .page-textura
+                .container
+
+                    .curso-topbar
+                        
+                        a.curso-topbar__logo
+                            include ../assets/images/logos/senaLogo.svg
+
+                    .curso-portada
+
+                        .row.align-items-center
+
+                            .col-12.col-lg-6
+
+                                h3.curso-subtitulo EVALUADOR DE COMPETENCIAS LABORALES EN EL ÁREA TÉCNICA DE SU DOMINIO
+                                h1.curso-titulo Ruta de aprendizaje
+
+                                .brand-line-primary
+
+                                p.curso-descripcion A continuación se presentan las actividades de aprendizaje que debe realizar el aprendiz durante el proceso formativo, estableciendo los tiempos, recursos educativos y evidencias que le permitirán  cumplir con los resultados de aprendizaje definidos para el programa de formación <strong>Evaluador de compentencias laborales en el área técnica de su dominio</strong>.
+                    
+
+                            .col-12.col-lg-6
+                                .d-none.d-lg-block
+                                    img(src="assets/images/header/header_ruta.svg")           
+
+        section#ruta.curso-resultados.section.bg-base-light.container
+
+            .subtitulo-guion.my-4
+                h2 Guía de aprendizaje 1 <br><small class="text-muted letter-spacing-1x font-weight-bold">Duración: 48 horas</small>
+
+            .timeline__wrapper.jumbotron.py-3.px-5
+
+                section#timeline
+                    .timeline__item.br--bottom   
+                        img(src="assets/images/ruta/inicio.svg", alt="")            
+                        p Inicio              
+                    .timeline-card-wrapper                              
+                        .timeline-card.card--step1
+                            .timeline-card__head
+                                .number-box
+                                    span 01
+                                .title-box #[strong Actividad de aprendizaje:] Interpreta la normativa referente al proceso de evaluación y certificación de competencias laborales.
+                            .timeline-card__body            
+                                .body-content-wrapper            
+                                    p #[strong Resultado de aprendizaje]</br>
+                                    ul.bg-color-dark
+                                        li 
+                                            span Interpretar el referente de evaluación teniendo en cuenta los componentes y lineamientos del organismo certificador.
+                                    .tl-hr-divider
+                                    p #[strong Material de formación]</br>Normativa vigente proceso ECCL
+                                    .tl-hr-divider
+                                    p #[strong Evidencias:] 
+                                        ul.bg-color-dark
+                                                li 
+                                                    span #[strong Desempeño:]<br>AA1-EV01:  Foro Normatividad del proceso ECCL.
+                                                li 
+                                                    span #[strong Producto:]<br>AA1-EV02: Mapa mental. 
+
+                        .timeline-card.card--step1
+                            .timeline-card__head
+                                .number-box
+                                    span 02
+                                .title-box #[strong Actividad de aprendizaje:] Ejecuta las fases del proceso de evaluación y certificación de competencias laborales.
+                            .timeline-card__body            
+                                .body-content-wrapper            
+                                    p #[strong Resultado de aprendizaje]</br>
+                                    ul.bg-color-dark
+                                        li 
+                                            span Ejecutar el proceso de evaluación de competencias laborales, acorde con lineamientos del organismo certificador.
+
+                                    .tl-hr-divider
+                                    p #[strong Material de formación]</br>Fases y procedimiento del proceso ECCL
+                                    .tl-hr-divider
+                                    p #[strong Evidencias:] 
+                                        ul.bg-color-dark
+                                            li 
+                                                span #[strong Conocimiento:]<br>AA2-EV01: Formulario de preguntas sobre el proceso ECCL.
+                                            li 
+                                                span #[strong Producto:]<br>AA2-EV02: Video explicativo sobre el proceso de sensibilización e inducción.
+                                            li 
+                                                span #[strong Producto:]<br>AA2-EV03: Póster con los requisitos de ingreso.
+                                            li 
+                                                span #[strong Conocimiento:]<br>AA2-EV04: Evaluación ECCL.                                              
+
+                        .timeline-card.card--step1
+                            .timeline-card__head
+                                .number-box
+                                    span 03
+                                .title-box #[strong Actividad de aprendizaje:] Acompaña la finalización del proceso de evaluación y certificación de competencias laborales.
+                            .timeline-card__body            
+                                .body-content-wrapper            
+                                    p #[strong Resultado de aprendizaje]</br>
+                                    ul.bg-color-dark
+                                        li 
+                                            span Acompañar el cierre del proceso de evaluación certificación según lineamientos del organismo certificador.
+                                    .tl-hr-divider
+                                    p #[strong Material de formación]</br>Cierre del proceso ECCL
+                                    .tl-hr-divider
+                                    p #[strong Evidencias:] 
+                                        ul.bg-color-dark
+                                            li 
+                                                span #[strong Producto:]<br>AA3-EV01: Informe de resultados del caso.
+                                            li 
+                                                span #[strong Producto:]<br>AA3-EV02: Flujograma proceso ECCL.
+
+                    .timeline__item.br--top                
+                        img(src="assets/images/ruta/certificacion.svg", alt="")    
+                        p Certificación        
+                    
+
+        +creditosFooter("assets/images/logos/senaLogo.svg")
+
+
+        script(src="assets/js/vendor.js")
+        script(src="assets/js/global.js")        
+        script(src="assets/js/pages.js")
+
+
+
+
+

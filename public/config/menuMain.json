@@ -1,0 +1,33 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  { 
+    "id": 0,
+    "icon": "fa fa-file-text",
+    "slug": "introduccion",
+    "title": "Introducción",
+    "breadcrumb": ["Inicio","introducción"],
+    "path": "pages/introduccion.html"     
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "unidad_1",
+    "title": "Unidad 1",
+    "breadcrumb": ["Inicio","Unidad 1"],
+    "path": "pages/tema_1.html"      
+  },
+  {
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "unidad_2",
+    "title": "Unidad 2",
+    "breadcrumb": [
+      "Inicio","Unidad 2"],
+    "path": "pages/tema_2.html"
+  }
+]

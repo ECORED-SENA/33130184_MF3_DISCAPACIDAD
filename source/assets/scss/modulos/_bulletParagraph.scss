@@ -1,0 +1,49 @@
+
+.list {
+  width: 100%;
+  display: flex !important;    
+  &__item {
+    &__bulletNumber {
+      position: relative;
+      width: 30px;
+      height: 30px;   
+      margin-right: 1rem;   
+      text-align: center;
+      border-radius: 50%;
+      background-color: orange;
+      span {
+        color: white;
+        font-weight: 700;
+        font-size: small;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+      }
+    }
+    &__number {
+      position: relative;  
+      margin-right: 1rem;    
+      span {                
+        color: orange;
+        font-size: 15pt;
+        font-weight: 700;
+        line-height: 1.2;        
+      }      
+    }
+    &__icon {
+      position: relative;
+      width: 15px;
+      margin-right: 0.65rem;
+      img {
+        width: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__txt {  
+    p:first-child, h3:first-child {
+      margin-top: 4px;
+    }  
+  }
+}
